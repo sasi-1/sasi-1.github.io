@@ -1,50 +1,181 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Meta-Continual Mobility Forecasting — Paper</title>
-<link rel="stylesheet" href="/assets/styles.css">
-<style>
-.paper-hero{padding:8px 0}
-.viewer-wrap{margin-top:18px;border:1px solid #e6e7eb;border-radius:6px;overflow:hidden}
-.viewer-toolbar{background:#fafafa;padding:8px 12px;border-bottom:1px solid #eee;display:flex;align-items:center;gap:10px}
-.viewer-iframe{width:100%;height:80vh;border:0}
-.download-btn{background:#0b5cff;color:white;padding:8px 12px;border-radius:6px;text-decoration:none}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta Continual Mobility Forecasting</title>
+    <link rel="stylesheet" href="../../assets/styles.css">
+    <style>
+        .paper-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 20px;
+            margin: 0 -20px 40px;
+        }
+        
+        .paper-header .container {
+            max-width: 900px;
+        }
+        
+        .paper-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        
+        .paper-meta {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            opacity: 0.95;
+            font-size: 1rem;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            transition: opacity 0.3s ease;
+        }
+        
+        .back-link:hover {
+            opacity: 1;
+        }
+        
+        .paper-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .pdf-viewer {
+            width: 100%;
+            height: 800px;
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            box-shadow: var(--shadow-lg);
+            margin-bottom: 2rem;
+        }
+        
+        .download-section {
+            text-align: center;
+            padding: 2rem;
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            margin-bottom: 3rem;
+        }
+        
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem 2rem;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.125rem;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow);
+        }
+        
+        .download-btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .paper-info {
+            padding: 2rem;
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            margin-bottom: 2rem;
+        }
+        
+        .paper-info h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .paper-info p {
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+        
+        @media (max-width: 768px) {
+            .paper-title {
+                font-size: 1.75rem;
+            }
+            
+            .pdf-viewer {
+                height: 600px;
+            }
+            
+            .paper-header {
+                padding: 40px 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-<div class="container">
-<a href="/papers/">← Back to Papers</a>
-<header class="paper-hero">
-<h1>Meta-Continual Mobility Forecasting for Proactive Handover Prediction</h1>
-<p><strong>Author:</strong> Sasi Vardhan Reddy Mandapati</p>
-<p class="paper-meta">Published as preprint — lightweight GRU + Reptile meta-initialization and EWMA-triggered adaptation.</p>
-</header>
+    <div class="paper-header">
+        <div class="container">
+            <a href="../../" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                Back to Home
+            </a>
+            <h1 class="paper-title">Meta Continual Mobility Forecasting</h1>
+            <div class="paper-meta">
+                <span>📅 Research Paper</span>
+                <span>📊 Machine Learning</span>
+                <span>🚀 Mobility Forecasting</span>
+            </div>
+        </div>
+    </div>
 
+    <div class="container paper-content">
+        <div class="download-section">
+            <p style="margin-bottom: 1rem; color: var(--text-light); font-size: 1.125rem;">Access the full paper</p>
+            <a href="Mandapati_MetaContinualMobilityForecasting.pdf" download class="download-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Download PDF
+            </a>
+        </div>
 
-<div class="viewer-wrap">
-<div class="viewer-toolbar">
-<a class="download-btn" href="paper.pdf" target="_blank">Download PDF</a>
-<div style="flex:1;color:#6b7280">Tip: use the browser's PDF toolbar to zoom, navigate pages, and download.</div>
-</div>
+        <div class="paper-info">
+            <h2>Abstract</h2>
+            <p>This paper presents a novel approach to mobility forecasting using meta-learning and continual learning techniques. The research addresses the challenge of adapting prediction models to evolving mobility patterns while maintaining performance across different contexts and time periods.</p>
+        </div>
 
+        <iframe 
+            src="Mandapati_MetaContinualMobilityForecasting.pdf" 
+            class="pdf-viewer"
+            title="Meta Continual Mobility Forecasting Paper">
+        </iframe>
 
-<!-- EMBED / IFRAME PDF VIEWER -->
-<!-- Option A: <iframe src="paper.pdf" class="viewer-iframe"></iframe> -->
+        <div class="paper-info">
+            <h2>Citation</h2>
+            <p style="font-family: monospace; background: white; padding: 1rem; border-radius: 8px; border: 1px solid var(--border);">
+                Mandapati, S. "Meta Continual Mobility Forecasting"
+            </p>
+        </div>
+    </div>
 
-
-<!-- Option B: use PDF.js viewer (more feature-rich) — uncomment & host pdf.js if desired -->
-
-
-<iframe src="Mandapati_MetaContinualMobilityForecasting.pdf#toolbar=1&view=FitH" class="viewer-iframe" title="Paper viewer"></iframe>
-</div>
-
-
-<section style="margin-top:18px">
-<h3>Abstract</h3>
-<p>Short-term mobility forecasting is a core building block for proactive handover decisions... (paste your abstract or short summary here)</p>
-</section>
-</div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Sasi. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
