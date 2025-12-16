@@ -9,12 +9,12 @@
         .paper-header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 60px 20px;
-            margin: 0 -20px 40px;
+            padding: 50px 20px 40px;
+            margin: 0 -20px 30px;
         }
         
         .paper-header .container {
-            max-width: 900px;
+            max-width: 1200px;
         }
         
         .paper-title {
@@ -48,43 +48,49 @@
         }
         
         .paper-content {
-            max-width: 900px;
+            max-width: 1200px;
             margin: 0 auto;
         }
         
         .pdf-viewer {
             width: 100%;
-            height: 800px;
+            height: 85vh;
             border: 2px solid var(--border);
             border-radius: 12px;
             box-shadow: var(--shadow-lg);
             margin-bottom: 2rem;
         }
         
-        .download-section {
+        .arxiv-section {
             text-align: center;
-            padding: 2rem;
+            padding: 1.5rem;
             background: var(--bg-secondary);
             border-radius: 12px;
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
         }
         
-        .download-btn {
+        .arxiv-section p {
+            color: var(--text-light);
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+        
+        .arxiv-btn {
             display: inline-flex;
             align-items: center;
             gap: 0.75rem;
-            padding: 1rem 2rem;
+            padding: 0.875rem 1.75rem;
             background: var(--primary);
             color: white;
             text-decoration: none;
             border-radius: 8px;
             font-weight: 600;
-            font-size: 1.125rem;
+            font-size: 1rem;
             transition: all 0.3s ease;
             box-shadow: var(--shadow);
         }
         
-        .download-btn:hover {
+        .arxiv-btn:hover {
             background: var(--primary-dark);
             transform: translateY(-2px);
             box-shadow: var(--shadow-lg);
@@ -113,11 +119,15 @@
             }
             
             .pdf-viewer {
-                height: 600px;
+                height: 70vh;
             }
             
             .paper-header {
-                padding: 40px 20px;
+                padding: 40px 20px 30px;
+            }
+            
+            .paper-content {
+                max-width: 900px;
             }
         }
     </style>
@@ -132,30 +142,20 @@
                 Back to Home
             </a>
             <h1 class="paper-title">Meta Continual Mobility Forecasting</h1>
-            <div class="paper-meta">
-                <span>📅 Research Paper</span>
-                <span>📊 Machine Learning</span>
-                <span>🚀 Mobility Forecasting</span>
-            </div>
         </div>
     </div>
 
     <div class="container paper-content">
-        <div class="download-section">
-            <p style="margin-bottom: 1rem; color: var(--text-light); font-size: 1.125rem;">Access the full paper</p>
-            <a href="Mandapati_MetaContinualMobilityForecasting.pdf" download class="download-btn">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                    <polyline points="7 10 12 15 17 10"></polyline>
-                    <line x1="12" y1="15" x2="12" y2="3"></line>
+        <div class="arxiv-section">
+            <p style="font-size: 1.125rem; color: var(--text);">Check the arXiv preprint</p>
+            <a href="http://arxiv.org/abs/2512.11841" target="_blank" rel="noopener noreferrer" class="arxiv-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
                 </svg>
-                Download PDF
+                View on arXiv
             </a>
-        </div>
-
-        <div class="paper-info">
-            <h2>Abstract</h2>
-            <p>This paper presents a novel approach to mobility forecasting using meta-learning and continual learning techniques. The research addresses the challenge of adapting prediction models to evolving mobility patterns while maintaining performance across different contexts and time periods.</p>
         </div>
 
         <iframe 
@@ -167,7 +167,7 @@
         <div class="paper-info">
             <h2>Citation</h2>
             <p style="font-family: monospace; background: white; padding: 1rem; border-radius: 8px; border: 1px solid var(--border);">
-                Mandapati, S. "Meta Continual Mobility Forecasting"
+                Mandapati, S. "Meta Continual Mobility Forecasting" arXiv:2512.11841
             </p>
         </div>
     </div>
